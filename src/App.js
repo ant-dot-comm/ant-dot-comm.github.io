@@ -35,7 +35,7 @@ function App() {
     if (sports) {
 
       document.getElementById("root").classList.add('theme-sports');
-      setMainImage(<img src="/images/mancave.svg" alt="man cave" />)
+      setMainImage(<img src="./images/mancave.svg" alt="man cave" />)
       setFeatureText(
           <>
             <div>"Nothing that comes easy is worth a dime."</div>
@@ -146,14 +146,14 @@ function App() {
           <MediaCard
             title="The Grails Club"
             url="http://www.thegrailsclub.com"
-            image="/images/grails.png"
+            image="./images/grails.png"
           >
             Blender & ThreeJS project creating unique cars based on my favorite sneakers.
           </MediaCard>
           <MediaCard
             title="BatDadMobiles"
             url="https://www.instagram.com/batdadmobiles/"
-            image="/images/customs.png"
+            image="./images/customs.png"
           >
             A showcase of the Hotwheels I customize as well as other cool cars and batmobiles I collect.
           </MediaCard>

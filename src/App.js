@@ -116,24 +116,24 @@ function App() {
         <div className='section-avatars-items'>
           {batman ? (
             <>
-              <Avatar imageUrl="/icons/avatar-dad-bat.svg" />
-              <Avatar imageUrl="/icons/avatar-mom-bat.svg" />
-              <Avatar imageUrl="/icons/avatar-girl-bat.svg" />
-              <Avatar imageUrl="/icons/avatar-boy-bat.svg" />
+              <Avatar imageUrl="./icons/avatar-dad-bat.svg" />
+              <Avatar imageUrl="./icons/avatar-mom-bat.svg" />
+              <Avatar imageUrl="./icons/avatar-girl-bat.svg" />
+              <Avatar imageUrl="./icons/avatar-boy-bat.svg" />
             </>
           ) : sports ? (
             <>
-              <Avatar imageUrl="/icons/avatar-dad-sports.svg" />
-              <Avatar imageUrl="/icons/avatar-mom-sports.svg" />
-              <Avatar imageUrl="/icons/avatar-girl-sports.svg" />
-              <Avatar imageUrl="/icons/avatar-boy-sports.svg" />
+              <Avatar imageUrl="./icons/avatar-dad-sports.svg" />
+              <Avatar imageUrl="./icons/avatar-mom-sports.svg" />
+              <Avatar imageUrl="./icons/avatar-girl-sports.svg" />
+              <Avatar imageUrl="./icons/avatar-boy-sports.svg" />
             </>
           ) : (
             <>
-              <Avatar imageUrl="/icons/avatar-dad.svg" />
-              <Avatar imageUrl="/icons/avatar-mom.svg" />
-              <Avatar imageUrl="/icons/avatar-girl.svg" />
-              <Avatar imageUrl="/icons/avatar-boy.svg" />
+              <Avatar imageUrl="./icons/avatar-dad.svg" />
+              <Avatar imageUrl="./icons/avatar-mom.svg" />
+              <Avatar imageUrl="./icons/avatar-girl.svg" />
+              <Avatar imageUrl="./icons/avatar-boy.svg" />
             </>
           )}
           

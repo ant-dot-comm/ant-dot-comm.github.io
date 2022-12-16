@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ant-folio/static/css/main.7be3721e.css",
-    "main.js": "/ant-folio/static/js/main.5dff2207.js",
+    "main.js": "/ant-folio/static/js/main.8d184dbb.js",
     "static/js/787.b26dd423.chunk.js": "/ant-folio/static/js/787.b26dd423.chunk.js",
     "static/media/brand-icons.svg": "/ant-folio/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/ant-folio/static/media/icons.62d9dae4e0040e81c980.svg",
@@ -24,11 +24,11 @@
     "static/media/outline-icons.woff2": "/ant-folio/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/ant-folio/index.html",
     "main.7be3721e.css.map": "/ant-folio/static/css/main.7be3721e.css.map",
-    "main.5dff2207.js.map": "/ant-folio/static/js/main.5dff2207.js.map",
+    "main.8d184dbb.js.map": "/ant-folio/static/js/main.8d184dbb.js.map",
     "787.b26dd423.chunk.js.map": "/ant-folio/static/js/787.b26dd423.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7be3721e.css",
-    "static/js/main.5dff2207.js"
+    "static/js/main.8d184dbb.js"
   ]
 }

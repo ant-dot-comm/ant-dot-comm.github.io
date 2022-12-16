@@ -1,0 +1,30 @@
+
+.header {
+    margin-top: 4rem;
+}
+.header-image {
+    border-radius: 50%;
+    height: 10rem;
+    overflow: hidden;
+    width: 10rem;
+    flex-shrink: 0;
+    @media screen and (min-width: $size-breakpoint-medium) {
+        height: 14rem;
+        width: 14rem;
+    }
+}
+.header-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $size-breakpoint-medium) {
+        text-align: center;
+    }
+}
+.social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    img {
+        width: 100%
+    }
+}

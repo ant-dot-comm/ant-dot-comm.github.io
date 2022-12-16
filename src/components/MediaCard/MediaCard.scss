@@ -1,0 +1,30 @@
+.media-card {
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    border-top-left-radius: $size-radius-base;
+    border-top-right-radius: $size-radius-base;
+    &:hover {
+        .media-card-image {
+            transform: scale(1.05);
+        }
+    }
+}
+.media-card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 66%;
+    transition: all .2s ease-in-out;
+}
+.media-card-content {
+    padding: $size-spacing-base;
+    border-right: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-light;
+    border-left: 1px solid $color-gray-light;
+    border-bottom-left-radius: $size-radius-base;
+    border-bottom-right-radius: $size-radius-base;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}

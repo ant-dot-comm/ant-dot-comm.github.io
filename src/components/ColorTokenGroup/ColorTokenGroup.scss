@@ -1,0 +1,44 @@
+.color-groups {
+    @media screen and (min-width: $size-breakpoint-medium) {
+        display: flex;
+        border-radius: $size-radius-base;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+}
+
+.color-token {
+    padding: 1rem;
+}
+
+.color-token-group-item-0 {
+    grid-area: light;
+}
+.color-token-group-item-1 {
+    grid-area: medium;
+}
+.color-token-group-item-2 {
+    grid-area: dark;
+}
+
+.color-token-group {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "medium light"
+        "medium dark";
+    @media screen and (max-width: $size-breakpoint-medium) {
+        border-radius: $size-radius-base;
+        margin-bottom: $size-spacing-base;
+        overflow: hidden;
+    }
+    @media screen and (min-width: $size-breakpoint-medium) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "medium"
+            "dark"
+            "light";
+        width: 100%;
+    }
+}

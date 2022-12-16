@@ -1,0 +1,35 @@
+{
+  "font": {
+    "size": {
+      "small" : {
+        "value": ".75rem"
+      },
+      "base"  : {
+        "value": "1rem"
+      },
+      "medium": {
+        "value": "1.5rem"
+      },
+      "large" : {
+        "value": "2rem"
+      },
+      "xlarge" : {
+        "value": "2.5rem"
+      }
+    },
+    "heading": {
+      "small": {
+        "value": "1.25rem"
+      },
+      "medium": {
+        "value": "1.75rem"
+      },
+      "large" : {
+        "value": "2.5rem"
+      },
+      "xlarge" : {
+        "value": "3rem"
+      }
+    }
+  }
+}

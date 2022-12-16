@@ -1,0 +1,29 @@
+body {
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    &.modal-open {
+      overflow: hidden;
+    }
+  }
+  
+  a {
+    color: var($--theme-font-color-base) !important;
+    text-decoration: none !important;
+  }
+  
+  p {
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+  }
+  #root {
+    color: var($--theme-font-color-base);
+  }

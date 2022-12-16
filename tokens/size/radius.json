@@ -1,0 +1,11 @@
+{
+    "size": {
+      "radius": {
+        "sm"     : { "value": ".25" },
+        "medium"    : { "value": ".5" },
+        "large"   : { "value": ".75" },
+        "xlarge"   : { "value": "1" },
+        "base"     : { "value": "{size.radius.large.value}" }
+      }
+    }
+  }

@@ -1,0 +1,14 @@
+{
+    "size": {
+      "spacing": {
+        "base"     : { "value": "1" },
+        "2x"     : { "value": "2" },
+        "3x"    : { "value": "3" },
+        "4x"   : { "value": "4" },
+        "5x"    : { "value": "5" },
+        "6x"       : { "value": "6" },
+        "7x"      : { "value": "7" },
+        "8x"      : { "value": "8" }
+      }
+    }
+  }

@@ -1,0 +1,90 @@
+{
+  "color": {
+    "gray": {
+      "light" : { "value": "#AAAAAA" },
+      "medium": { "value": "#3A3A3A" },
+      "dark"  : { "value": "#111111" }
+    },
+    "batman": {
+      "highlight-1": {
+          "light" : { "value": "#ffd72e" },
+          "medium": { "value": "#f4b821" },
+          "dark"  : { "value": "#d39211" }
+      },
+      "highlight-2": {
+          "light" : { "value": "#4e5e89" },
+          "medium": { "value": "#313d68" },
+          "dark"  : { "value": "#232b4e" }
+      },
+      "primary": {
+          "light" : { "value": "#69a82d" },
+          "medium": { "value": "#459400" },
+          "dark"  : { "value": "#356d00" }
+      },
+      "secondary": {
+          "light" : { "value": "#bf6500" },
+          "medium": { "value": "#b45700" },
+          "dark"  : { "value": "#942d00" }
+      },
+      "font": {
+        "base"     : { "value": "#ffffff" },
+        "secondary" : { "value": "{color.batman.primary.medium.value}" },
+        "tertiary" : { "value": "{color.batman.secondary.medium.value}" }
+      }
+    },
+    "developer": {
+      "highlight-1": {
+          "light" : { "value": "#D72156" },
+          "medium": { "value": "#C70F3D" },
+          "dark"  : { "value": "#A90433" }
+      },
+      "highlight-2": {
+          "light" : { "value": "#FF8B3E" },
+          "medium": { "value": "#FF6E00" },
+          "dark"  : { "value": "#EC6000" }
+      },
+      "primary": {
+          "light" : { "value": "#19B1A9" },
+          "medium": { "value": "#009A95" },
+          "dark"  : { "value": "#028680" }
+      },
+      "secondary": {
+          "light" : { "value": "#6A4C9A" },
+          "medium": { "value": "#4F2E80" },
+          "dark"  : { "value": "#381B66" }
+      },
+      "font": {
+        "base"     : { "value": "#111111" },
+        "secondary" : { "value": "{color.developer.primary.medium.value}" },
+        "tertiary" : { "value": "{color.developer.secondary.medium.value}" }
+      }
+    },
+    "sports": {
+      "highlight-1": {
+          "light" : { "value": "#6a4c94" },
+          "medium": { "value": "#4f2e80" },
+          "dark"  : { "value": "#381b66" }
+      },
+      "highlight-2": {
+          "light" : { "value": "#a30433" },
+          "medium": { "value": "#c10f3d" },
+          "dark"  : { "value": "#d12156" }
+      },
+      "primary": {
+        "light" : { "value": "#215c8a" },
+        "medium": { "value": "#1d4774" },
+        "dark"  : { "value": "#0f3a60" }
+      },
+      "secondary": {
+          "light" : { "value": "#69a82d" },
+          "medium": { "value": "#459400" },
+          "dark"  : { "value": "#356d00" }
+      },
+      "font": {
+        "base"     : { "value": "#111111" },
+        "secondary" : { "value": "{color.sports.primary.medium.value}" },
+        "tertiary" : { "value": "{color.sports.secondary.medium.value}" }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// Dropdodwn
+.ui.dropdown > .dropdown.icon {
+    color: $color-batman-primary-light;
+    margin: 0;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ui.dropdown .button {
+    padding-right: 3rem;
+}
+.ui.dropdown .menu {
+    border-radius: $size-radius-base;
+    margin-top: math.div($size-spacing-base, 2);
+}
+
+// Button
+.ui.button {
+    border-radius: $size-radius-base !important;
+    font-weight: 700 !important;
+    margin: 0;
+}
+
+.ui.primary.button,
+a.ui.primary.button {
+    background-color: var($--theme-primary);
+    color: white !important;
+    &:hover,
+    &:focus {
+        background-color: var($--theme-primary-dark);
+    }
+    &:active {
+        background-color: var($--theme-primary-light);
+    }
+}
+
+.ui.basic.primary.button {
+    box-shadow: 0px 0px 0px 1px var($--theme-primary) inset !important;
+    color: var($--theme-primary) !important;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 0px 1px var($--theme-primary-dark) inset !important;
+        color: var($--theme-primary-dark) !important;
+    }
+    &:active {
+        box-shadow: 0px 0px 0px 1px var($--theme-primary-light) inset !important;
+        color: var($--theme-primary-light) !important;
+    }
+}

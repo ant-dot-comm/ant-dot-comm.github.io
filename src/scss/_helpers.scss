@@ -1,0 +1,138 @@
+// Colors
+.color-mercedes {
+    color: $color-developer-primary-medium;
+}
+
+.color-gray {
+    color: $color-gray-medium;
+}
+
+// Alignment
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.align-baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+// Spacing
+.mr0 { margin-right: 0px !important; }
+.mr { margin-right: $size-spacing-base !important; }
+.mr2x { margin-right: $size-spacing-2x !important; }
+.mr3x { margin-right: $size-spacing-3x !important; }
+
+.ml { margin-left: $size-spacing-base !important; }
+.ml2x { margin-left: $size-spacing-2x !important; }
+.ml3x { margin-left: $size-spacing-3x !important; }
+
+.mb0 { margin-bottom: 0 !important; }
+.mb { margin-bottom: $size-spacing-base !important; }
+.mb2x { margin-bottom: $size-spacing-2x !important; }
+.mb3x { margin-bottom: $size-spacing-3x !important; }
+.mb4x { margin-bottom: $size-spacing-4x !important; }
+.mb5x { margin-bottom: $size-spacing-5x !important; }
+
+.pb0 { padding-bottom: 0px !important }
+
+.pt { padding-top: $size-spacing-base !important; }
+.pt2x { padding-top: $size-spacing-2x !important; }
+.pt3x { padding-top: $size-spacing-3x !important; }
+.pt4x { padding-top: $size-spacing-4x !important; }
+
+// Heading
+h1, 
+.heading-1,
+h2, 
+.heading-2,
+h3,
+.heading-3 {
+    font-family: 'eurostile', sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+h1, 
+.heading-1 {
+    font-size: $font-heading-large;
+    font-weight: 700;
+    @media screen and (min-width: $size-breakpoint-medium) {
+        font-size: $font-heading-xlarge;
+    }
+}
+
+h2,
+.heading-2 {
+    font-size: $font-heading-medium;
+    font-weight: 500;
+    @media screen and (min-width: $size-breakpoint-medium) {
+        font-size: $font-heading-large;
+    }
+}
+
+h3,
+.heading-3 {
+    font-size: $font-heading-small;
+    font-weight: 500;
+}
+
+// Text
+.font-sm {
+    font-size: $font-size-small !important;
+}
+
+.font-base {
+    font-size: $font-size-base !important;
+}
+
+.font-lg {
+    font-size: $font-size-medium !important;
+    @media screen and (min-width: $size-breakpoint-medium) {
+        font-size: $font-size-large;
+    }
+}
+
+.font-xl {
+    font-size: $font-size-large !important;
+    @media screen and (min-width: $size-breakpoint-medium) {
+        font-size: $font-size-xlarge;
+    }
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+// Layout
+.hide-for-medium {
+    @media screen and (min-width: $size-breakpoint-medium) {
+        display: none !important;
+    }
+}
+
+.show-for-medium {
+    @media screen and (max-width: $size-breakpoint-medium) {
+        display: none !important;
+    }
+}
+
+.icon-small {
+    width: 1.5rem;
+}
+
+.icon-large {
+    width: 34px;
+}
+
+// Animation
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+// Overrides
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

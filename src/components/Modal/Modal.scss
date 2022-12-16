@@ -1,0 +1,9 @@
+.ui.basic.modal {
+    background: white;
+    border-radius: $size-radius-base;
+    color: var($--theme-font-color-base);
+    padding: $size-spacing-2x;
+    &> .close {
+        color: var($--theme-font-color-base);
+    } 
+}

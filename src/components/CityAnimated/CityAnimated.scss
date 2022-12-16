@@ -1,0 +1,15 @@
+.city-animated {
+  border-bottom: 100px solid $color-gray-dark;
+  height: 620px;
+  overflow: hidden;
+}
+
+.silhouette {
+  position: absolute;
+  bottom: 0;
+}
+.silhouette--batman {
+  left: 50%;
+  transform: translateX(-50%);
+}
+  

@@ -1,0 +1,28 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "src/scss/",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "src/js/",
+      "files": [
+        {
+          "destination": "colors.js",
+          "format": "javascript/module-flat",
+          "filter": {
+            "attributes": {
+              "category": "color"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

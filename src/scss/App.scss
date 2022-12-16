@@ -1,0 +1,224 @@
+@use "sass:math";
+@import "_themeVariables";
+@import "_page";
+@import "_helpers";
+@import "_overrides";
+@import "../components/Avatar/Avatar.scss";
+@import "../components/About/About.scss";
+@import "../components/CityAnimated/CityAnimated.scss";
+@import "../components/BaseIcon/BaseIcon.scss";
+@import "../components/ColorTokenGroup/ColorTokenGroup.scss";
+@import "../components/Header/Header.scss";
+@import "../components/Modal/Modal.scss";
+@import "../components/MediaCard/MediaCard.scss";
+@import "../components/Pill/Pill.scss";
+
+.section-header {
+    grid-area: header;
+}
+
+.section-about {
+    grid-area: about;
+}
+
+.section-color {
+    grid-area: colors;
+}
+
+.section-icon {
+    grid-area: icons;
+    .section-icon-items {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: max-content;
+        img {
+            width: 2.5rem;
+        }
+    }
+}
+
+.section-avatars {
+    grid-area: avatars;
+    .section-avatars-items {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, minmax(auto, 6rem));
+        @media screen and (max-width: $size-breakpoint-medium) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.section-knowledge {
+    grid-area: knowledge;
+    .section-knowledge-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $size-spacing-base;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+ 
+.section-footer {
+    grid-area: footer;
+}
+
+.section-projects {
+    grid-area: projects;
+    .section-projects-items {
+        @media screen and (max-width: $size-breakpoint-medium) {
+            max-width: 400px;
+            margin: 0 auto;
+    
+            .media-card:not(:last-child) {
+                margin-bottom: $size-spacing-2x;
+            }
+        }
+        @media screen and (min-width: $size-breakpoint-medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+}
+
+@mixin site-container-desktop-size {
+    min-width: 700px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-container {
+    padding-right: $size-spacing-base;
+    padding-left: $size-spacing-base;
+    padding-bottom: $size-spacing-3x;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    @media screen and (min-width: $size-breakpoint-medium) {
+        padding-bottom: $size-spacing-8x;
+        @include site-container-desktop-size;
+    }
+}
+
+.site-container--illustration {
+    svg,
+    img {
+        height: auto;
+        width: 100%;
+        // margin-bottom: -1px;  need to fix the developer svg 1px 
+    }
+
+    @media screen and (min-width: $size-breakpoint-medium) {
+        width: 100%;
+    }
+}
+
+.section-text {
+    background-color: var($--theme-primary-light);
+    color: white;
+    text-align: center;
+}
+
+.section-full {
+    margin-bottom: $size-spacing-3x;
+    .site-container {
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        @media screen and (min-width: $size-breakpoint-medium) {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+            max-width: 700px;
+        }
+    }
+}
+
+.section-gotham {
+    grid-area: gotham;
+}
+
+.site-container--grid {
+    @media screen and (min-width: $size-breakpoint-medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header"
+            "knowledge knowledge knowledge knowledge"
+            "colors colors colors colors"
+            "icons icons projects projects"
+            "avatars avatars projects projects"
+            "gotham gotham gotham gotham";
+        grid-column-gap: $size-spacing-base;
+        grid-row-gap: $size-spacing-4x;
+    }
+}
+
+.theme-batman { 
+    background: #333333; 
+
+    .section-illustration {
+        background: rgb(232,190,108);
+        background: linear-gradient(0deg, rgba(232,190,108,1) 0%, rgba(191,101,0,1) 54%, rgba(147,0,0,1) 100%);
+    }
+
+    .ui.basic.primary.button {
+        color: white !important;
+        &:hover,
+        &:focus {
+            color: white !important;
+        }
+        &:active {
+            color: white;
+        }
+    }
+
+    & > .section-text {
+        background-color: $color-gray-dark;
+    }
+
+    .pill-style-primary {
+        color: $color-gray-dark;
+        &.pill-color-highlight-2 { 
+            background-color: var($--theme-highlight-secondary-light); 
+        }
+    }
+
+    .pill-style-secondary {
+        color: white;
+        &.pill-color-highlight-2 { 
+            border: 1px solid var($--theme-highlight-secondary-light); 
+        }
+    }
+
+    .media-card { 
+        box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 10%);
+    }
+    .media-card-content {
+        background-color: $color-gray-medium;
+        border: none;
+    }
+}
+
+.theme-sports {
+    .section-illustration {
+        background: rgb(113,113,113);
+        background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(164,164,164,1) 50%, rgba(113,113,113,1) 100%);
+    }
+    .section-full {
+        .site-container {
+            @media screen and (min-width: $size-breakpoint-medium) {
+                max-width: initial;
+            }
+        }
+    }
+}
+

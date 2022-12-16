@@ -1,6 +1,6 @@
 // Dropdodwn
 .ui.dropdown > .dropdown.icon {
-    color: $color-batman-primary-light;
+    color: var($--theme-primary);
     margin: 0;
     position: absolute;
     right: 1rem;

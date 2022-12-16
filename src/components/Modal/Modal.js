@@ -19,15 +19,6 @@ export function GlobalModal(props) {
   )
 
   return (
-      // <div className={overlayClasses} onClick={() => setModalOpen(false)}>
-      //   <div className={modalClasses} onClick={e => e.stopPropagation()}>
-      //     <Button className="icon-button modal-close" onClick={() => setModalOpen(false)}>
-      //       <img src="/icons/close.svg" alt="menu icon" className="icon-small" />
-      //     </Button>
-          
-      //     {children}
-      //   </div>
-      // </div>
       <Modal
         className={modalClasses}
         basic

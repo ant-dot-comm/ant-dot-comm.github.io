@@ -35,7 +35,7 @@ function App() {
     if (sports) {
 
       document.getElementById("root").classList.add('theme-sports');
-      setMainImage(<img src="./images/mancave.svg" alt="man cave" />)
+      setMainImage(<img src={`${process.env.PUBLIC_URL + "/images/mancave.svg"}`} alt="man cave" />)
       setFeatureText(
           <>
             <div>"Nothing that comes easy is worth a dime."</div>
@@ -116,24 +116,24 @@ function App() {
         <div className='section-avatars-items'>
           {batman ? (
             <>
-              <Avatar imageUrl="./icons/avatar-dad-bat.svg" />
-              <Avatar imageUrl="./icons/avatar-mom-bat.svg" />
-              <Avatar imageUrl="./icons/avatar-girl-bat.svg" />
-              <Avatar imageUrl="./icons/avatar-boy-bat.svg" />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-bat.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-bat.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-bat.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-bat.svg"}`} />
             </>
           ) : sports ? (
             <>
-              <Avatar imageUrl="./icons/avatar-dad-sports.svg" />
-              <Avatar imageUrl="./icons/avatar-mom-sports.svg" />
-              <Avatar imageUrl="./icons/avatar-girl-sports.svg" />
-              <Avatar imageUrl="./icons/avatar-boy-sports.svg" />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-sports.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-sports.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-sports.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-sports.svg"}`} />
             </>
           ) : (
             <>
-              <Avatar imageUrl="./icons/avatar-dad.svg" />
-              <Avatar imageUrl="./icons/avatar-mom.svg" />
-              <Avatar imageUrl="./icons/avatar-girl.svg" />
-              <Avatar imageUrl="./icons/avatar-boy.svg" />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl.svg"}`} />
+              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy.svg"}`} />
             </>
           )}
           
@@ -145,15 +145,15 @@ function App() {
         <div className='section-projects-items'>
           <MediaCard
             title="The Grails Club"
-            url="http://www.thegrailsclub.com"
-            image="./images/grails.png"
+            url="http://thegrailsclub.com"
+            image={`${process.env.PUBLIC_URL + "/images/grails.png"}`} 
           >
             Blender & ThreeJS project creating unique cars based on my favorite sneakers.
           </MediaCard>
           <MediaCard
             title="BatDadMobiles"
             url="https://www.instagram.com/batdadmobiles/"
-            image="./images/customs.png"
+            image={`${process.env.PUBLIC_URL + "/images/customs.png"}`} 
           >
             A showcase of the Hotwheels I customize as well as other cool cars and batmobiles I collect.
           </MediaCard>

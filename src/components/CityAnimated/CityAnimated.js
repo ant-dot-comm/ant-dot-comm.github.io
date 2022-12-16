@@ -11,7 +11,7 @@ function Gotham() {
                 x: xPosAnim1, 
             }}
             className="silhouette silhouette--gotham" 
-            src="./images/cityAssets/GothamSkyline.svg"  
+            src={`${process.env.PUBLIC_URL + "/images/cityAssets/GothamSkyline.svg"}`}  
             alt=""
         />
     );
@@ -26,7 +26,7 @@ function Logos() {
                 x: xPosAnim1, 
             }}
             className="silhouette silhouette--logos" 
-            src="./images/cityAssets/Logos.svg" 
+            src={`${process.env.PUBLIC_URL + "/images/cityAssets/Logos.svg"}`}
             alt=""
         />
     );
@@ -40,7 +40,7 @@ export function CityAnimated() {
         <Gotham />
         <img
             className="silhouette silhouette--batman" 
-            src="./images/cityAssets/Batman.svg" 
+            src={`${process.env.PUBLIC_URL + "/images/cityAssets/Batman.svg"}`}
             alt=""
         />
     </div>

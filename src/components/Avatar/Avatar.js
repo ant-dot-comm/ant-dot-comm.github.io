@@ -6,7 +6,7 @@ export function Avatar(props) {
     imageUrl,
   } = props
 
-  const avatarClasses = classNames(className, "avatar grow")
+  const avatarClasses = classNames(className, "avatar")
 
   return (
     <img className={avatarClasses} src={imageUrl} alt="avatar"/>

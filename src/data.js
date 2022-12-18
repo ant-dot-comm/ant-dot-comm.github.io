@@ -144,3 +144,18 @@ export const interestIcons = [
     "icon-sneakers",
     "icon-drums",
 ]
+
+export const themeIcons = [
+    {
+        theme: 'developer',
+        icon: 'icon-code',
+    },
+    {
+        theme: 'batman',
+        icon: 'icon-bat',
+    },
+    {
+        theme: 'sports',
+        icon: 'icon-football',
+    },
+]

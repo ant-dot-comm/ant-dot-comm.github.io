@@ -33,13 +33,6 @@ export function About(props) {
         <div className="about-buttons">
           <Button className="primary large" onClick={() => handleAbout()}>About</Button>
           <Button className="basic primary large" onClick={() => handleResume()}>Resume</Button>
-          <Dropdown text={<Button className="basic primary large">Theme</Button>}>
-            <Dropdown.Menu>
-              <Dropdown.Item text='Developer' onClick={() => setTheme("developer")}/>
-              <Dropdown.Item text='Bat Mode' onClick={() => setTheme("batman")} />
-              <Dropdown.Item text='Sport Mode' onClick={() => setTheme("sports")} />
-            </Dropdown.Menu>
-          </Dropdown>
         </div>
       </div>
   );

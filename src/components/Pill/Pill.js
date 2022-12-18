@@ -14,7 +14,7 @@ export const Pill = (props) => {
 
   const mediaCardClasses = classNames(
     className, 
-    "pill grow",
+    "pill",
     styleClass,
     colorClass
   )

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { useContext, useState, useEffect } from 'react';
 
 import {
@@ -16,23 +17,25 @@ import svgFile from "./components/Icons/iconSprite.svg";
 import CodingAnimated from "./components/AnimatedSvgs/CodingAnimated"
 import BatmanAnimated from "./components/AnimatedSvgs/BatmanAnimated"
 
-import { knowledgePills, interestIcons } from "./data"
+import { knowledgePills, interestIcons, themeIcons } from "./data"
 import SiteContext from "./SiteContext"
 
 import 'semantic-ui-less/semantic.less'
 import './scss/App.scss';
 
 function App() {
-  const { modalContent, theme } = useContext(SiteContext)
+  const { modalContent, theme, setTheme } = useContext(SiteContext)
   const [ mainImage, setMainImage ] = useState(<CodingAnimated />)
-  const [ featureText, setFeatureText ] = useState(<CodingAnimated />)
-
-  const sports = theme === "sports"
-  const batman = theme === "batman"
+  const [ featureText, setFeatureText ] = useState('')
+  const [ themeOptionsOpen, setThemeOptionsOpen ] = useState(false)
 
   useEffect(() => {
+    
+    document.querySelectorAll('.fixed-menu-list-item').forEach(el=>el.classList.remove('active'));
+    document.getElementById(theme).classList.add('active');
+    
     document.getElementById("root").removeAttribute('class');
-    if (sports) {
+    if (theme === "sports") {
 
       document.getElementById("root").classList.add('theme-sports');
       setMainImage(<img src={`${process.env.PUBLIC_URL + "/images/mancave.svg"}`} alt="man cave" />)
@@ -43,7 +46,7 @@ function App() {
           </>
         )
       
-    } else if (batman) {
+    } else if (theme === "batman") {
       
       document.getElementById("root").classList.add('theme-batman');
       setMainImage(<BatmanAnimated />)
@@ -64,12 +67,28 @@ function App() {
     }
   }, [theme]);
 
-
   return (
     <>
     <GlobalModal>
       {modalContent}
     </GlobalModal>
+
+    <div className={classNames('fixed-menu', { 'fixed-menu--open': themeOptionsOpen})}>
+      <div class="fixed-menu-trigger">
+        <BaseIcon className="fixed-menu-trigger-icon" href={`${svgFile}#${'icon-caret'}`} onClick={() => setThemeOptionsOpen(!themeOptionsOpen)} />
+      </div>
+      <ul className='fixed-menu-list list-unstyled '>
+        {
+          themeIcons.map((item, key)=>{   
+            return (
+                <li key={key} id={item.theme} className='fixed-menu-list-item' style={{ transitionDelay: `${key}00ms` }} onClick={() => setTheme(item.theme)}>
+                  <BaseIcon className="fixed-menu-icon grow" href={`${svgFile}#${item.icon}`}  />
+                </li>
+            );   
+          })  
+        }
+      </ul>
+    </div>
 
     <div className="site-container">
       <Header className="section-header"/>
@@ -104,7 +123,6 @@ function App() {
         <div className='section-icon-items'>
           {interestIcons.map((icon, i) => (
             <BaseIcon
-              className="grow"
               href={`${svgFile}#${icon}`}
           />
           ))}
@@ -114,14 +132,14 @@ function App() {
       <div className='section-avatars'>
         <h2 className='font-lg mb2x'>Family Avatars</h2>
         <div className='section-avatars-items'>
-          {batman ? (
+          {theme === "batman" ? (
             <>
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-bat.svg"}`} />
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-bat.svg"}`} />
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-bat.svg"}`} />
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-bat.svg"}`} />
             </>
-          ) : sports ? (
+          ) : theme === "sports" ? (
             <>
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-sports.svg"}`} />
               <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-sports.svg"}`} />
@@ -169,7 +187,7 @@ function App() {
     </div>
 
     <div className='section-full section-gotham '>
-      { batman && (<CityAnimated />)}
+      { theme === "batman" && (<CityAnimated />)}
     </div>
 
     {/* <div className="section-full section-footer">

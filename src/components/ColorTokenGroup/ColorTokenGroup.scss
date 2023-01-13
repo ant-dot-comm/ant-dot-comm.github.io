@@ -1,16 +1,43 @@
 .color-groups {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     @media screen and (min-width: $size-breakpoint-medium) {
-        display: flex;
-        border-radius: $size-radius-base;
+        flex-direction: row;
         justify-content: space-between;
-        overflow: hidden;
     }
 }
 
 .color-token {
+    color: white;
     padding: 1rem;
 }
 
+.color-token-group {
+    flex-grow: 1;
+}
+
+.color-token-group-name {
+    display: block;
+}
+
+.color-token-group-item-container {
+    border-radius: $size-radius-base;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "medium light"
+        "medium dark";
+    @media screen and (min-width: $size-breakpoint-medium) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "light"
+            "medium"
+            "dark";
+        width: 100%;
+    }
+}
 .color-token-group-item-0 {
     grid-area: light;
 }
@@ -22,23 +49,5 @@
 }
 
 .color-token-group {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "medium light"
-        "medium dark";
-    @media screen and (max-width: $size-breakpoint-medium) {
-        border-radius: $size-radius-base;
-        margin-bottom: $size-spacing-base;
-        overflow: hidden;
-    }
-    @media screen and (min-width: $size-breakpoint-medium) {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "medium"
-            "dark"
-            "light";
-        width: 100%;
-    }
+    
 }

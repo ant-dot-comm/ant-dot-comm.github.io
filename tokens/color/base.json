@@ -66,10 +66,10 @@
           "dark"  : { "value": "#381b66" }
       },
       "highlight-2": {
-          "light" : { "value": "#a30433" },
-          "medium": { "value": "#c10f3d" },
-          "dark"  : { "value": "#d12156" }
-      },
+        "light" : { "value": "#D72156" },
+        "medium": { "value": "#C70F3D" },
+        "dark"  : { "value": "#A90433" }
+    },
       "primary": {
         "light" : { "value": "#215c8a" },
         "medium": { "value": "#1d4774" },

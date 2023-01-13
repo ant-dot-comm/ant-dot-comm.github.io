@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 17 Dec 2022 21:10:07 GMT
+ * Generated on Fri, 13 Jan 2023 16:56:01 GMT
  */
 
 module.exports = {
@@ -40,9 +40,9 @@ module.exports = {
   "ColorSportsHighlight1Light": "#6a4c94",
   "ColorSportsHighlight1Medium": "#4f2e80",
   "ColorSportsHighlight1Dark": "#381b66",
-  "ColorSportsHighlight2Light": "#a30433",
-  "ColorSportsHighlight2Medium": "#c10f3d",
-  "ColorSportsHighlight2Dark": "#d12156",
+  "ColorSportsHighlight2Light": "#d72156",
+  "ColorSportsHighlight2Medium": "#c70f3d",
+  "ColorSportsHighlight2Dark": "#a90433",
   "ColorSportsPrimaryLight": "#215c8a",
   "ColorSportsPrimaryMedium": "#1d4774",
   "ColorSportsPrimaryDark": "#0f3a60",

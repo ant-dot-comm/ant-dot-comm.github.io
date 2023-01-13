@@ -190,11 +190,6 @@ function App() {
       { theme === "batman" && (<CityAnimated />)}
     </div>
 
-    {/* <div className="section-full section-footer">
-      <div className="site-container">
-          antonicommodore@gmail.com
-      </div>
-    </div> */}
     </>
   );
 }

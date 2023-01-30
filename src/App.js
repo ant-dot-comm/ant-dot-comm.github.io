@@ -20,7 +20,7 @@ import BatmanAnimated from "./components/AnimatedSvgs/BatmanAnimated"
 import { knowledgePills, interestIcons, themeIcons } from "./data"
 import SiteContext from "./SiteContext"
 
-import 'semantic-ui-less/semantic.less'
+import 'semantic-ui-css/semantic.min.css'
 import './scss/App.scss';
 
 function App() {

@@ -4,7 +4,7 @@ import classNames from "classnames"
 import SiteContext from "../../SiteContext"
 import { AboutContent, Resume } from "../../components"
 
-import { Button, Dropdown } from "semantic-ui-react"
+import { Button } from "semantic-ui-react"
 
 export function About(props) {
   const {
@@ -16,7 +16,7 @@ export function About(props) {
     "section-about",
   )
     
-  const { modal, setModalOpen, handleModalContent, setTheme } = useContext(SiteContext)
+  const { modal, setModalOpen, handleModalContent } = useContext(SiteContext)
 
   const handleAbout = () => {
     setModalOpen(!modal)

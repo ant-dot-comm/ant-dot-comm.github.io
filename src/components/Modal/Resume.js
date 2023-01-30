@@ -1,6 +1,4 @@
 import classNames from "classnames"
-import { Button } from "semantic-ui-react"
-
 
 export function Resume(props) {
   const {
@@ -22,7 +20,6 @@ export function Resume(props) {
         <h3 className="heading-3">Front-End Engineer</h3>
         <p>As we migrated into ReactJS I was responsible for building, maintaining, and setting up testing for the shared component library using ReactJS, Foundation, Jest, and Enzyme.</p>
         <p>Developed and maintained components and layouts for the create flow and campaign page teams using ReactJS, Redux, and React Final Form.</p>
-        {/* <Button className="mr primary large mb show-for-medium" href="https://www.figma.com/proto/GcKjFaH6nQjGF4aliNKRDE/Antoni-%40-GFM?node-id=105%3A16&scaling=contain&page-id=0%3A1&starting-point-node-id=105%3A16" target="_blank" rel="noreferrer">Campaign Page Presentation</Button> */}
         <p>Led front-end development of the homepage and other marketing pages using PHP, JavaScript, and CSS.</p>
         <p>Designed and developed reusable components and page layouts for the Internal Tools team using Vue.</p>
         

@@ -1,8 +1,0 @@
-/*******************************
-     User Global Variables
-*******************************/
-
-@importGoogleFonts : false;
-@fontName          : 'europa';
-
-@primaryColor: #009A95 @important;

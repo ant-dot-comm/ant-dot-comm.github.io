@@ -68,6 +68,7 @@
 
 .section-projects {
     grid-area: projects;
+
     .section-projects-items {
         @media screen and (max-width: $size-breakpoint-medium) {
             max-width: 400px;
@@ -77,10 +78,21 @@
                 margin-bottom: $size-spacing-2x;
             }
         }
-        @media screen and (min-width: $size-breakpoint-medium) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+
+        &.section-projects-items--2-column {
+            @media screen and (min-width: $size-breakpoint-medium) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        &.section-projects-items--3-column {
+            @media screen and (min-width: $size-breakpoint-medium) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+            }
         }
     }
 }

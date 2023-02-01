@@ -160,7 +160,8 @@ function App() {
 
       <div className='section-projects'>
         <h2 className='font-lg mb2x'>Project Cards</h2>
-        <div className='section-projects-items'>
+
+        <div className='section-projects-items section-projects-items--2-column'>
           <MediaCard
             title="The Grails Club"
             url="http://thegrailsclub.com"
@@ -176,6 +177,23 @@ function App() {
             A showcase of the Hotwheels I customize as well as other cool cars and batmobiles I collect.
           </MediaCard>
         </div>
+
+        {/* <div className='section-projects-items section-projects-items--3-column'>
+          <MediaCard
+            title="Logos"
+            url="https://www.behance.net/gallery/162760141/Logos"
+            image={`${process.env.PUBLIC_URL + "/images/logos-group.png"}`} 
+          >
+            I really enjoy doing logo work. Here a few I've worked on over the years.
+          </MediaCard>
+          <MediaCard
+            title="LoremPickSum"
+            url="http://lorempicksum.com/"
+            image={`${process.env.PUBLIC_URL + "/images/LoremPickSum.png"}`} 
+          >
+            Tired of using same old Lorem Ipsum? This is the site for you!
+          </MediaCard>
+        </div> */}
       </div>
 
       <div className='section-color'>

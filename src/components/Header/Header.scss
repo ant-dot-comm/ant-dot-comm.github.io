@@ -21,8 +21,12 @@
         text-align: center;
     }
 }
+.header-content-contact {
+    position: absolute;
+    top: $size-spacing-2x;
+    right: $size-spacing-2x;
+}
 .social-icon {
-    
     img {
         height: 1.5rem;
         width: 1.5rem;

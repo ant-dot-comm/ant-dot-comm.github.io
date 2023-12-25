@@ -62,7 +62,7 @@ function App() {
       
       document.getElementById("root").classList.add('theme-developer');
       setMainImage(<CodingAnimated />)
-      setFeatureText('Clean design patterns and thoughtful interactions make me a happy guy. I enjoy learning new ways of bringing ideas to life in the browser. ')
+      setFeatureText('Blending tech expertise with a flair for design, I enjoy brining new ideas to life in the browser.')
 
     }
   }, [theme]);

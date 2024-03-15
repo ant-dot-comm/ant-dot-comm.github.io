@@ -22,7 +22,7 @@ export function ColorTokenGroup(props) {
   if (theme === "batman") {
     colorsName = ["Bulletproof Yellow", "Gotham Blue", "Joker Green", "Turbines Orange"]
   } else if (theme === "sports") {
-    colorsName = ["Vikings Purple", "Buckeyes Scarlet", "Timberwolves Blue", "24"]
+    colorsName = ["Vikings Purple", "Rosso Corsa", "Timberwolves Blue", "24"]
   } else {
     colorsName = ["Buckeyes Scarlet", "Hotwheels Orange", "Mercedes Livery Green", "Minnesota Purple"]
   }

@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import classNames from "classnames"
 
 import SiteContext from "../../SiteContext"
-import { AboutContent, Resume } from "../../components"
+// import { AboutContent, Resume } from "../../components"
+import { Resume } from "../../components"
 
 import { Button } from "semantic-ui-react"
 
@@ -18,10 +19,10 @@ export function About(props) {
     
   const { modal, setModalOpen, handleModalContent } = useContext(SiteContext)
 
-  const handleAbout = () => {
-    setModalOpen(!modal)
-    handleModalContent(<AboutContent />)
-  }
+  // const handleAbout = () => {
+  //   setModalOpen(!modal)
+  //   handleModalContent(<AboutContent />)
+  // }
   
   const handleResume = () => {
     setModalOpen(!modal)
@@ -31,7 +32,7 @@ export function About(props) {
   return (
       <div className={aboutClasses}>
         <div className="about-buttons">
-          <Button className="primary large" onClick={() => handleAbout()}>About</Button>
+          {/* <Button className="primary large" onClick={() => handleAbout()}>About</Button> */}
           <Button className="basic primary large" onClick={() => handleResume()}>Resume</Button>
         </div>
       </div>

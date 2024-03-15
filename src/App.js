@@ -27,7 +27,7 @@ function App() {
   const { modalContent, theme, setTheme } = useContext(SiteContext)
   const [ mainImage, setMainImage ] = useState(<CodingAnimated />)
   const [ featureText, setFeatureText ] = useState('')
-  const [ themeOptionsOpen, setThemeOptionsOpen ] = useState(false)
+  const [ themeOptionsOpen, setThemeOptionsOpen ] = useState(true)
 
   useEffect(() => {
     

@@ -27,6 +27,9 @@
 .ml2x { margin-left: $size-spacing-2x !important; }
 .ml3x { margin-left: $size-spacing-3x !important; }
 
+.mt0 { margin-top: 0 !important; }
+.mt { margin-top: $size-spacing-base !important; }
+
 .mb0 { margin-bottom: 0 !important; }
 .mb { margin-bottom: $size-spacing-base !important; }
 .mb2x { margin-bottom: $size-spacing-2x !important; }
@@ -35,7 +38,12 @@
 .mb5x { margin-bottom: $size-spacing-5x !important; }
 
 .pb0 { padding-bottom: 0px !important }
+.pb { padding-bottom: $size-spacing-base !important; }
+.pb2x { padding-bottom: $size-spacing-2x !important; }
+.pb3x { padding-bottom: $size-spacing-3x !important; }
+.pb4x { padding-bottom: $size-spacing-4x !important; }
 
+.pt0 { padding-top: 0px !important; }
 .pt { padding-top: $size-spacing-base !important; }
 .pt2x { padding-top: $size-spacing-2x !important; }
 .pt3x { padding-top: $size-spacing-3x !important; }
@@ -65,7 +73,7 @@ h1,
 h2,
 .heading-2 {
     font-size: $font-heading-medium;
-    font-weight: 500;
+    font-weight: 700;
     @media screen and (min-width: $size-breakpoint-medium) {
         font-size: $font-heading-large;
     }

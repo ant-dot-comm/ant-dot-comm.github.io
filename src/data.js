@@ -126,6 +126,13 @@ export const knowledgePills = [
         }
     },
     {
+        text: "ThreeJs",
+        style: {
+            type: "secondary",
+            color: "highlight-2"
+        }
+    },
+    {
         text: "Logo Design",
         style: {
             type: "secondary",

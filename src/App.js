@@ -95,13 +95,13 @@ function App() {
     </div>
 
     <div className="section-full section-illustration mb0">
-      <div className="site-container site-container--illustration pt2x pb0">
+      <div className="site-container site-container--illustration mb0">
           {mainImage}
       </div>
     </div>
 
-    <div className="section-full section-text">
-      <div className="site-container">
+    <div className="section-full section-text pt3x pb3x">
+      <div className="site-container mt0 mb0">
         <p className='font-xl'>
           {featureText} 
         </p>
@@ -109,7 +109,7 @@ function App() {
     </div>
 
     <div className="site-container site-container--grid">
-      <div className='section-knowledge'>
+      <div className='section-knowledge mb3x'>
         <h2 className='font-lg mb2x'>Knowledge Pills</h2>
         <ul className="section-knowledge-list">
           {knowledgePills.map((item, i) => (
@@ -118,85 +118,92 @@ function App() {
         </ul>
       </div>
 
-      <div className='section-icon'>
-        <h2 className='font-lg mb2x'>Interest Icons</h2>
-        <div className='section-icon-items'>
-          {interestIcons.map((icon, i) => (
-            <BaseIcon
+      <div className='section-me-system'>
+        <div className="section-icon mb3x">
+          <h2 className='font-lg mb2x'>Interest Icons</h2>
+          <div className='section-icon-items'>
+            {interestIcons.map((icon, i) => (
+              <BaseIcon
               href={`${svgFile}#${icon}`}
-          />
-          ))}
+            />
+            ))}
+          </div>
+        </div>
+
+        <div className="section-avatars mb3x">
+          <h2 className='font-lg mb2x'>Family Avatars</h2>
+          <div className='section-avatars-items'>
+            {theme === "batman" ? (
+              <>
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-bat.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-bat.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-bat.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-bat.svg"}`} />
+              </>
+            ) : theme === "sports" ? (
+              <>
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-sports.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-sports.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-sports.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-sports.svg"}`} />
+              </>
+            ) : (
+              <>
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl.svg"}`} />
+                <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy.svg"}`} />
+              </>
+            )}
+          </div>
         </div>
       </div>
 
-      <div className='section-avatars'>
-        <h2 className='font-lg mb2x'>Family Avatars</h2>
-        <div className='section-avatars-items'>
-          {theme === "batman" ? (
-            <>
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-bat.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-bat.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-bat.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-bat.svg"}`} />
-            </>
-          ) : theme === "sports" ? (
-            <>
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad-sports.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom-sports.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl-sports.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy-sports.svg"}`} />
-            </>
-          ) : (
-            <>
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-dad.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-mom.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-girl.svg"}`} />
-              <Avatar imageUrl={`${process.env.PUBLIC_URL + "/icons/avatar-boy.svg"}`} />
-            </>
-          )}
-          
-        </div>
-      </div>
-
-      <div className='section-projects'>
+      <div className='section-projects mb3x'>
         <h2 className='font-lg mb2x'>Project Cards</h2>
-
-        <div className='section-projects-items section-projects-items--2-column'>
+        <div className='section-projects-items section-projects-items--2-column mb'>
+          <MediaCard
+            title="LeagueSpot"
+            url="https://www.behance.net/gallery/196153135/LeagueSpot"
+            image={`${process.env.PUBLIC_URL + "/images/Cover.jpg"}`} 
+          >
+            During my tenure at LeagueSpot, I led the creation and implementation of a comprehensive design system, product features, and custom theming capabilities.
+          </MediaCard>
           <MediaCard
             title="The Grails Club"
             url="http://thegrailsclub.com"
             image={`${process.env.PUBLIC_URL + "/images/grails.png"}`} 
           >
-            Blender & ThreeJS project creating unique cars based on my favorite sneakers.
+            I embarked on a creative project using Blender and Three.js to design and render custom cars inspired by my favorite sneakers.
+          </MediaCard>
+        </div>
+        <div className='section-projects-items section-projects-items--3-column'>
+          <MediaCard
+            title="Logos"
+            url="https://www.behance.net/gallery/162760141/Logos"
+            image={`${process.env.PUBLIC_URL + "/images/logos-group.png"}`} 
+          >
+            I have a genuine passion for logo design, and over the years, I've had the pleasure of working on several projects. 
           </MediaCard>
           <MediaCard
             title="BatDadMobiles"
             url="https://www.instagram.com/batdadmobiles/"
             image={`${process.env.PUBLIC_URL + "/images/customs.png"}`} 
           >
-            A showcase of the Hotwheels I customize as well as other cool cars and batmobiles I collect.
-          </MediaCard>
-        </div>
-
-        {/* <div className='section-projects-items section-projects-items--3-column'>
-          <MediaCard
-            title="Logos"
-            url="https://www.behance.net/gallery/162760141/Logos"
-            image={`${process.env.PUBLIC_URL + "/images/logos-group.png"}`} 
-          >
-            I really enjoy doing logo work. Here a few I've worked on over the years.
+            
+            I love customizing Hot Wheels and collecting unique cars and Batmobiles. Here's a showcase of some of my favorite creations and collectibles.
           </MediaCard>
           <MediaCard
             title="LoremPickSum"
             url="http://lorempicksum.com/"
             image={`${process.env.PUBLIC_URL + "/images/LoremPickSum.png"}`} 
           >
-            Tired of using same old Lorem Ipsum? This is the site for you!
+            If you're tired of the same old Lorem Ipsum, look no further! Welcome to LoremPickSum, where you'll find a refreshing alternative to spice up your placeholder text needs.
           </MediaCard>
-        </div> */}
+        </div>
       </div>
 
-      <div className='section-color'>
+      <div className='section-color mb3x'>
         <h2 className='font-lg mb2x'>Foundation Colors</h2>
         <div className="color-groups">
             <ColorTokenGroup theme={theme} />

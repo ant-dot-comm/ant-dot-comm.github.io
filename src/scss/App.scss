@@ -25,6 +25,12 @@
     grid-area: colors;
 }
 
+.section-me-system {
+    display: flex;
+    flex-direction: column;
+    grid-area: meSystem;
+}
+
 .section-icon {
     grid-area: icons;
     .section-icon-items {
@@ -90,6 +96,11 @@
         &.section-projects-items--3-column {
             @media screen and (min-width: $size-breakpoint-medium) {
                 display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            @media screen and (min-width: $size-breakpoint-large) {
+                display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 1rem;
             }
@@ -97,25 +108,20 @@
     }
 }
 
-@mixin site-container-desktop-size {
-    min-width: 700px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .site-container {
     padding-right: $size-spacing-base;
     padding-left: $size-spacing-base;
-    padding-bottom: $size-spacing-3x;
+    margin-bottom: $size-spacing-3x;
+    margin-top: $size-spacing-3x;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     
     @media screen and (min-width: $size-breakpoint-medium) {
-        padding-bottom: $size-spacing-8x;
-        @include site-container-desktop-size;
+        min-width: 700px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -141,15 +147,7 @@
 .section-full {
     margin-bottom: $size-spacing-3x;
     .site-container {
-        align-items: center;
-        justify-content: center;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        @media screen and (min-width: $size-breakpoint-medium) {
-            padding-top: 7rem;
-            padding-bottom: 7rem;
-            max-width: 700px;
-        }
+        max-width: 700px;
     }
 }
 
@@ -166,11 +164,11 @@
             "header header header header"
             "knowledge knowledge knowledge knowledge"
             "colors colors colors colors"
-            "icons icons projects projects"
-            "avatars avatars projects projects"
+            "meSystem meSystem projects projects"
+            "meSystem meSystem projects projects"
             "gotham gotham gotham gotham";
         grid-column-gap: $size-spacing-base;
-        grid-row-gap: $size-spacing-4x;
+        grid-row-gap: 0;
     }
 }
 

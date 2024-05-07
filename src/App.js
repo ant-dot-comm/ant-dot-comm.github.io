@@ -170,28 +170,36 @@ function App() {
             During my tenure at LeagueSpot, I led the creation and implementation of a comprehensive design system, product features, and custom theming capabilities.
           </MediaCard>
           <MediaCard
+            title="F1NSIGHT"
+            url="https://www.f1nsight.com/"
+            image={`${process.env.PUBLIC_URL + "/images/F1nsightMeta.jpg"}`} 
+          >
+            Welcome to F1NSIGHT! This project is dedicated to providing Formula 1 enthusiasts with detailed analyses of past race data, including leaderboards, lap times, tire strategies, and the fastest laps for each driver
+          </MediaCard>
+        </div>
+        <div className='section-projects-items section-projects-items--2-column mb'>
+          <MediaCard
             title="The Grails Club"
             url="http://thegrailsclub.com"
             image={`${process.env.PUBLIC_URL + "/images/grails.png"}`} 
-          >
+            >
             I embarked on a creative project using Blender and Three.js to design and render custom cars inspired by my favorite sneakers.
-          </MediaCard>
-        </div>
-        <div className='section-projects-items section-projects-items--3-column'>
-          <MediaCard
-            title="Logos"
-            url="https://www.behance.net/gallery/162760141/Logos"
-            image={`${process.env.PUBLIC_URL + "/images/logos-group.png"}`} 
-          >
-            I have a genuine passion for logo design, and over the years, I've had the pleasure of working on several projects. 
           </MediaCard>
           <MediaCard
             title="BatDadMobiles"
             url="https://www.instagram.com/batdadmobiles/"
             image={`${process.env.PUBLIC_URL + "/images/customs.png"}`} 
           >
-            
             I love customizing Hot Wheels and collecting unique cars and Batmobiles. Here's a showcase of some of my favorite creations and collectibles.
+          </MediaCard>
+        </div>
+        <div className='section-projects-items section-projects-items--2-column'>
+          <MediaCard
+            title="Logos"
+            url="https://www.behance.net/gallery/162760141/Logos"
+            image={`${process.env.PUBLIC_URL + "/images/logos-group.png"}`} 
+          >
+            I have a genuine passion for logo design, and over the years, I've had the pleasure of working on several projects. 
           </MediaCard>
           <MediaCard
             title="LoremPickSum"

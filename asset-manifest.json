@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ant-folio/static/css/main.1b4e2cda.css",
-    "main.js": "/ant-folio/static/js/main.332f5ce7.js",
+    "main.js": "/ant-folio/static/js/main.b54d121a.js",
     "static/js/787.b26dd423.chunk.js": "/ant-folio/static/js/787.b26dd423.chunk.js",
     "static/media/brand-icons.svg": "/ant-folio/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/ant-folio/static/media/icons.62d9dae4e0040e81c980.svg",
@@ -27,11 +27,11 @@
     "index.html": "/ant-folio/index.html",
     "static/media/linkedin-in.svg": "/ant-folio/static/media/linkedin-in.a7f3037778456b5887f25347d11df910.svg",
     "main.1b4e2cda.css.map": "/ant-folio/static/css/main.1b4e2cda.css.map",
-    "main.332f5ce7.js.map": "/ant-folio/static/js/main.332f5ce7.js.map",
+    "main.b54d121a.js.map": "/ant-folio/static/js/main.b54d121a.js.map",
     "787.b26dd423.chunk.js.map": "/ant-folio/static/js/787.b26dd423.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b4e2cda.css",
-    "static/js/main.332f5ce7.js"
+    "static/js/main.b54d121a.js"
   ]
 }
